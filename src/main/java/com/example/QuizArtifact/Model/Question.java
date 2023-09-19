@@ -1,5 +1,6 @@
 package com.example.QuizArtifact.Model;
 
+import com.example.QuizArtifact.Difficulty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,4 +19,14 @@ public abstract class Question {
     private String statement;
     @NonNull
     private int marks;
+    @NonNull
+    private Difficulty difficulty;
+    public Question() {
+
+    }
+    public Question(String statement, int marks, Difficulty difficulty) {
+        this.statement = statement;
+        this.marks = marks;
+        this.difficulty = difficulty;
+    }
 }
