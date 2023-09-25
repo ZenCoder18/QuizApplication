@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class MultipleTypeChoiceObject implements MultipleTypeChoiceAbstract{
 
     @Override
-    public Question getMultipleAnswerMcq(int questionId, String statement, int marks,Difficulty difficulty, ArrayList<String> options, ArrayList<String> answers) {
+    public Question getMultipleAnswerMcq(int questionId, String statement, int marks,Difficulty difficulty, ArrayList<String> options, ArrayList<String> answers) throws Exception {
         return new MultipleTypeChoice(statement, marks, difficulty, options, answers);
     }
 
