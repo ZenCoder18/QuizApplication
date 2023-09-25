@@ -17,7 +17,6 @@ import java.util.Objects;
 @Data
 @Entity
 public class MultipleTypeChoice extends MultipleChoiceQuestion {
-    @ElementCollection
     @NotEmpty
     private List<String> answers = new ArrayList<>();
     public MultipleTypeChoice() {

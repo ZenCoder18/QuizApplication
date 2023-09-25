@@ -3,6 +3,7 @@ package com.example.QuizArtifact.Model;
 import com.example.QuizArtifact.Difficulty;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.NonNull;
@@ -15,7 +16,7 @@ import java.util.List;
 @Entity
 public abstract class MultipleChoiceQuestion extends Question{
     @ElementCollection
-    @NotNull
+    @NotEmpty
     private List<String> options= new ArrayList<>();
     public MultipleChoiceQuestion() {
         super();
