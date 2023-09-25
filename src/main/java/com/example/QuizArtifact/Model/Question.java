@@ -9,8 +9,8 @@ import lombok.Data;
 import lombok.NonNull;
 import org.springframework.lang.NonNullFields;
 
-@Entity
 @Data
+@Entity
 public abstract class Question {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
