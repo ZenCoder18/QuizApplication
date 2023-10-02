@@ -11,6 +11,6 @@ import java.util.List;
 
 @Repository
 public interface MultipleTypeChoiceRepo extends JpaRepository<MultipleTypeChoice, Integer> {
-    @Query(value = "Select * from question limit :limit", nativeQuery = true)
+    @Query(value = "Select * from question where dtype = 'MultipleTypeChoice' limit :limit", nativeQuery = true)
     List<MultipleTypeChoice> findByLimit(Integer limit);
 }

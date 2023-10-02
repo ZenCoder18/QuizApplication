@@ -2,8 +2,10 @@
 package com.example.QuizArtifact.Model;
 import com.example.QuizArtifact.Difficulty;
 import jakarta.annotation.Nonnull;
+import jakarta.persistence.CollectionTable;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jdk.jfr.Enabled;
